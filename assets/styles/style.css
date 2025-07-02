@@ -1,0 +1,225 @@
+/* Reset general */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dedede;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.navbar h2 {
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: fit-content;
+}
+
+.menu-title {
+  background-color: seagreen;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Contenido principal */
+.contenido {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  min-height: 400px;
+}
+
+/* Formulario imagen */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 200px;
+}
+
+form input[type="file"] {
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 150px;
+}
+
+form button {
+  padding: 10px 15px;
+  background: #4b7bec;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+form button:hover {
+  background-color: #3867d6;
+}
+
+/* Contenedor de ítems */
+#items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 20px;
+}
+
+.item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.item i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.item i:hover {
+  color: #ff3b30;
+}
+
+/* Tareas */
+#task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+#task-input:focus {
+  border-color: #4b7bec;
+  box-shadow: 0 0 6px rgba(75, 123, 236, 0.3);
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 15px;
+}
+
+.task-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  gap: 15px;
+  margin-top: 8px;
+  color: #777;
+}
+
+.task-icon {
+  cursor: pointer;
+  font-size: 22px;
+  color: #000;
+  transition: 0.2s ease;
+}
+
+.task-icon:hover {
+  color: #ff3b30;
+}

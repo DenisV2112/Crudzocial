@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería CRUD</title>
+  <link rel="stylesheet" href="../assets/styles/style.css" />
+</head>
+<body>
+
+  <h2>Subir Imagen</h2>
+  <form id="image-form">
+    <input type="file" id="image-input" accept="image/*" required />
+    <input type="text" id="image-name" placeholder="Nombre de imagen" required />
+    <button type="submit">Guardar</button>
+  </form>
+
+  <div id="gallery"></div>
+
+  <script src="../assets/js/img.js"></script>
+</body>
+</html>

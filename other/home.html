@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Perfil - Riwi</title>
+  <link rel="stylesheet" href="../assets/styles/style.css" />
+  
+</head>
+<body>
+  <header class="navbar">
+    <h1>Riwi</h1>
+     <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                <button onclick="logout()" class="btn btn-danger">Cerrar sesión</button>
+            </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="menu-title">Menu</h2>
+        <button onclick="/*cargarPagina('./images.html')*/">Imagenes</button>
+        <button onclick="/*cargarPagina('./to_do.html')*/">Notas</button>
+        <button onclick="/*cargarPagina('./logs.html')*/">Logs</button>
+    </aside>
+
+    <main id="contenido" class="contenido">
+    </main>
+  </div>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
